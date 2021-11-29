@@ -1,8 +1,15 @@
-  import React from 'react';
-function App() {
+  import React, { Component } from 'react';
+  import ListadeNotas from './components/ListadeNotas';
+  import FormCadastro from './components/FormCadastro';
+class App extends Component{
+  render(){
   return (
-    <h1> Gustavo</h1>
+    <section>
+      <FormCadastro/>
+      <ListadeNotas/>
+    </section>
   );
+  }
 }
 
 export default App;
